@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hadder {
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #444444;
+            flex-direction: row;
+            align-items: center;
+            border: 2px solid red;
+
+        }
+
+        .hadder a {
+            color: #D0ECF5;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .hadder a:hover {
+            background-color: gold;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: wheat; */
+            padding: 10px ;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            gap: 20px;
+            flex-direction: column;
+            flex-basis: 100%;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            /* border: 2px solid red; */
+            width: 100%;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            border-radius: 10px;
+            
+        }
+
+        .image{
+            flex-basis: 30%;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .image img {
+            height: auto;
+            width:30% ;
+            border-radius: 5px;
+            /* border: 2px solid black; */
+        }
+
+        .a{
+            flex-basis: 70%;
+            text-align: center;
+        }
+        .wrapper .content {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid blue; */
+            flex-basis: 50%; 
+            gap: 20px;
+            
+        }
+        .b1{
+            color: #5EB151;
+        }
+        .c1{
+            color: #E91C60;
+        }
+        .d1{
+            color: #FFC326;
+        }
+        .e1{
+            color: #9A22AE;
+        }
+
+        .wrapper div:hover {
+            background-color: aqua;
+        }
+        @media (max-width:1024px){
+            .hadder{
+                display: flex;
+                flex-wrap: wrap;
+                
+                
+            }
+
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                border: 2px solid red;
+               
+            }
+            .image{
+                border-radius: 10px;
+                /* border: 2px solid red; */
+                
+            }
+            .image img{
+                width: 90%;
+                height: 80%;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+        
+        @media(min-width:1024px){
+            .wrapper{
+                flex-basis: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="hadder">
+        <a href="#">Home</a>
+        <a href="#">Education</a>
+        <a href="#">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact Me</a>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="image"><img src="https://clipground.com/images/profile-logo-6.jpg" alt="profile logo"></div>
+            <div class="content">
+                <h1 class="a b1">Home</h1>
+                <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, architecto?</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image"><img
+                    src="https://static.vecteezy.com/system/resources/previews/007/688/840/original/education-logo-free-vector.jpg"alt="education logo"></div>
+            <div class="content">
+                <h1 class="a c1">Education</h1>
+                <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, architecto?</p>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="image"><img src="https://th.bing.com/th/id/OIP.SfvL4HTYhvIznJA3JtYGTAHaHa?rs=1&pid=ImgDetMain"alt="project logo"></div>
+            <div class="content">
+                <h1 class="a d1">Projects</h1>
+                <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, architecto?</p>
+            </div>
+        </div>    
+        <div class="container">
+            <div class="image"><img src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX24138484.jpg"alt="skill logo"></div>
+            <div class="content">
+                <h1 class="a e1">Skills</h1>
+                <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, architecto?</p>
+            </div>
+        </div> 
+    </div>
+</body>
+
+</html>
